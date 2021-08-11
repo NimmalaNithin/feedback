@@ -1,0 +1,113 @@
+body{
+    display:grid;
+    background-color: rgb(190, 178, 178);
+    color:rgb(97, 60, 46);
+    font-family: Arial, Helvetica, sans-serif;
+    grid-template-areas: 
+        "h1"
+        "p"
+        "form";
+}
+
+#title{
+    grid-area: h1;
+    justify-self: center;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    font-size: 31px;
+    text-align: center;
+    text-shadow: 8px 10px 20px rgba(0,0,0,0.23), 8px 6px 6px rgba(0,0,0,0.23);
+}
+
+#description{
+    grid-area: p;
+    justify-self: center;
+    margin-top:10px;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 10px 10px 20px rgba(0,0,0,0.23), 10px 6px 6px rgba(0,0,0,0.23);
+}
+
+#survey-form{
+    grid-area:form;
+    justify-self: center;
+    background-color: rgba(228, 190, 36, 0.61);
+    color: rgb(16, 63, 16);
+    width:600px;
+    padding: 50px 100px 50px 100px;
+    display: grid;
+    border-radius: 7px;
+    box-shadow: 5px 10px 20px rgba(0,0,0,0.23), 5px 6px 6px rgba(0,0,0,0.23);
+    
+}
+@media(max-width:900px){
+    #survey-form{
+        width:60%;
+        padding: 50px 60px 50px 60px;
+    }
+}
+@media(max-width:600px){
+    #survey-form{
+        width:75%;
+        padding: 50px 30px 50px 30px;
+    }
+}
+
+
+form div{
+    margin-bottom:20px;
+}
+
+label{
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+input,select,textarea{
+    display:block;
+    margin-top: 10px;
+}
+
+.radio label{
+    display: block;
+}
+.radio input{
+    display: inline;
+}
+
+.checkbox label{
+    display: block;
+}
+.checkbox input{
+    display: inline;
+}
+
+#name,#email,#number,#dropdown{
+    border: 0px;
+    height: 3em;
+    width: 100%;
+    border-radius: 5px;
+}
+
+textarea{
+    border: 0px;
+    height: 7em;
+    width: 100%;
+    border-radius: 5px;
+}
+textarea::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+#submit{
+    font-size: px;
+    height: 3em;
+    width: 100%;
+    background-color: rgb(83, 141, 141);
+    color:white;
+    border-color: rgb(150, 147, 147);
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey/feedback form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" >
+</head>
+<body>
+    <h1 id="title">NITHIN Survey/Feedback Form</h1>
+    <p id="description">Thank you for taking the time to help us improve</p>
+    <form id="survey-form" action="#">
+
+        <div class="name">
+            <label for="name" id="name-label">Name</label>
+            <input name="name" type="text" placeholder="Enter Your Name" id="name" required>
+        </div>
+
+
+        <div class="email">
+            <label for="email" id="email-label">Email</label>
+            <input name="email" type="email" placeholder="Enter Your Email" id="email" required>
+        </div>
+
+
+        <div class="number">
+            <label for="age" id="number-label">Age (optional)</label>
+            <input name="age" type="number" min=13 max=99 placeholder="Age" id="number">
+        </div>
+
+
+        <div class="role-dropdown">
+            <label for="role">Which option best describes your current role?</label>
+            <select name="role" id="dropdown" required>
+                <option disabled hidden selected>Select an option</option>
+                <option value="Student">Student</option>
+                <option value="Full Time Job">Full Time Job</option>
+                <option value="Full Time Learner">Full Time Learner</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+
+
+        <div class="radio">
+            <label for="recommendation">Would you recommend NITHIN to a friend?</label>
+            <label for="Definitely">
+                <input type="radio" id="Definitely" value="Definitely" name="recommendation" checked>Definitely
+            </label>
+            <label for="Maybe">
+                <input type="radio" id="Maybe" value="Maybe" name="recommendation">Maybe
+            </label>
+            <label for="Not sure">
+                <input type="radio" id="Not sure" value="Not sure" name="recommendation">Not sure
+            </label>
+        </div>
+
+        <div class="fav-dropdown">
+            <label for="fav-feature">What is your favorite feature of NITHIN?</label>
+            <select name="fav-feature" id="dropdown" required>
+                <option disabled hidden selected>Select an option</option>
+                <option value="Challenges">Challenges</option>
+                <option value="Projects">Projects</option>
+                <option value="Community">Community</option>
+                <option value="Open Source">Open Source</option>
+            </select>
+        </div>
+
+        <div class="checkbox">
+            <label for="improvement">Would you recommend NITHIN to a friend?</label>
+            <label for="Front-end Projects">
+                <input type="checkbox" id="Front-end Projects" value="Front-end Projects" name="improvement" >Front-end Projects
+            </label>
+            <label for="Back-end Projects">
+                <input type="checkbox" id="Back-end Projects" value="Back-end Projects" name="improvement">Back-end Projects
+            </label>
+            <label for="Data Visualization">
+                <input type="checkbox" id="Data Visualization" value="Data Visualization" name="improvement">Data Visualization
+            </label>
+            <label for="Challenges">
+                <input type="checkbox" id="Challenges" value="Challenges" name="improvement">Challenges
+            </label>
+            <label for="Open Source Community">
+                <input type="checkbox" id="Open Source Community" value="Open Source Community" name="improvement">Open Source Community
+            </label>
+            <label for="Gitter help rooms">
+                <input type="checkbox" id="Gitter help rooms" value="Gitter help rooms" name="improvement">Gitter help rooms
+            </label>
+            <label for="Videos">
+                <input type="checkbox" id="Videos" value="Videos" name="improvement">Videos
+            </label>
+            <label for="City Meetups">
+                <input type="checkbox" id="City Meetups" value="City Meetups" name="improvement">City Meetups
+            </label>
+            <label for="Wiki">
+                <input type="checkbox" id="Wiki" value="Wiki" name="improvement">Wiki
+            </label>
+            <label for="Forum">
+                <input type="checkbox" id="Forum" value="Forum" name="improvement">Forum
+            </label>
+            <label for="Additional Courses">
+                <input type="checkbox" id="Additional Courses" value="Additional Courses" name="improvement">Additional Courses
+            </label>
+        </div>
+
+
+        <div class="feedback-text">
+            <label for="feedback">Any comments or suggestions?</label>
+            <textarea name="feedback" id="feedback" placeholder="Enter your comment here..."></textarea>
+        </div>
+
+
+        <div class="submit-button">
+            <button id="submit">Submit</button>
+        </div>
+
+    </form>
+</body>
+</html>
